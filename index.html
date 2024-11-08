@@ -316,7 +316,7 @@
             $(".left, .right").promise().done(function() {
                 $(".niha").fadeIn(10000).css("top", "-50px");
                 $(".niha").promise().done(function() {
-                    $(".left, .right").hide();
+                    $(".left, .right").fadeOut(3000);
                     $(".bottom").fadeIn(3000);
                     createFallingElements();
                     $(".bottom").promise().done(function() {
