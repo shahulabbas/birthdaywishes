@@ -45,8 +45,9 @@
             position: relative;
             right: 0;
             margin-left: auto;
-            width: 250px;
+            width: 300px;
             height: 50px;
+            white-space:nowrap;
             transition: all 7s ease-in-out;
         }
         
@@ -259,7 +260,7 @@
         .proposal-text {
             display: none;
             position: absolute;
-            top: 70%;
+            top: 60%;
             left: 50%;
             transform: translate(-50%, 50%);
             color: #f1faee;
@@ -316,7 +317,7 @@
             $(".left, .right").promise().done(function() {
                 $(".niha").fadeIn(10000).css("top", "-50px");
                 $(".niha").promise().done(function() {
-                    $(".left, .right").fadeOut(3000);
+                    $(".left").hide();
                     $(".bottom").fadeIn(3000);
                     createFallingElements();
                     $(".bottom").promise().done(function() {
